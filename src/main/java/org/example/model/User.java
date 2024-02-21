@@ -1,9 +1,13 @@
 package org.example.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigDecimal;
 
 public class User {
+    @JsonProperty("user_id")
     private Long user_id;
+    @JsonProperty("current_balance")
     private BigDecimal current_balance;
 
     public User() {
